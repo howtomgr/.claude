@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for dir in */)",
+      "Bash(do if [ -f \"$dir/README.md\" ])",
+      "Bash(! grep -q \"## Table of Contents\" \"$dir/README.md\")",
+      "Bash(then echo \"$dir\")",
+      "Bash(fi)",
+      "Bash(for repo in vscode-server mastodon webvirt home-assistant raspbian exchange shinobi)",
+      "Bash(do echo \"=== $repo ===\")",
+      "Bash(wc:*)",
+      "Bash(cp:*)"
+    ],
+    "deny": []
+  }
+}
